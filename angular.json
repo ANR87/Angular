@@ -93,7 +93,7 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": ["../node_modules/pusher-js/dist/web/pusher.min.js"]
           }
         },
         "lint": {

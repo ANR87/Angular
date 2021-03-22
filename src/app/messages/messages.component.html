@@ -1,0 +1,12 @@
+<div *ngFor="let message of messages">
+    <b>{{ message.user }}</b>: {{ message.text }}
+  </div>
+  <form [formGroup]="chatForm">
+  <label for="userName">Username</label>
+<input type="text" id="userName" formControlName="userName" name="userName" [(ngModel)]="userName">
+
+<label for="message">Message</label>
+<input type="text" id="messageText" formControlName="messageText" name="messageText" [(ngModel)]="messageText">
+
+<button (click)="sendMessage(userName, messageText)">Send</button>
+</form>
